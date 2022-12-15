@@ -7,9 +7,16 @@ public class Main {
     public int highCount = 0;
   };
 
-  static CountsByUsage countBatteriesByUsage(int[] cycles) {
+  CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
-    return counts;
+    if(counts<=310){
+      lowCount++;
+  }
+    else if(counts>310 && counts<=929){
+      mediumCount++;
+    }
+    else 
+      highCount++;
   }
 
   static void testBucketingByNumberOfCycles() {
@@ -23,5 +30,13 @@ public class Main {
 
   public static void main(String[] args) {
     testBucketingByNumberOfCycles();
+    if(counts<=310){
+      lowCount++;
   }
+    else if(counts>310 && counts<=929){
+      mediumCount++;
+    }
+    else 
+      highCount++;
+}
 }
