@@ -9,7 +9,14 @@ public class Main {
 
   CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
-    return counts;
+    if(counts<=310){
+      lowCount++;
+  }
+    else if(counts>310 && counts<=929){
+      mediumCount++;
+    }
+    else 
+      highCount++;
   }
 
   static void testBucketingByNumberOfCycles() {
